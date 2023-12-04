@@ -299,4 +299,189 @@ iface eth0 inet static
 	netmask 255.255.255.248
 	gateway 192.209.0.41
 ```
-- sss
+- Royal Capital
+```
+#A9 Denken-PC Royal Capital
+auto eth0
+iface eth0 inet static
+	address 192.209.2.2
+	netmask 255.255.255.0
+	gateway 192.209.2.1
+```
+- Wille Region
+```
+#A9 Denken-PC Wille region
+auto eth0
+iface eth0 inet static
+	address 192.209.2.3
+	netmask 255.255.255.0
+	gateway 192.209.2.1
+```
+- Turki Region
+```
+#A8 Lugner-PC Turki Region
+auto eth0
+iface eth0 inet static
+	address 192.209.12.2
+	netmask 255.255.252.0
+	gateway 192.209.12.1
+```
+- Grobe Forest
+```
+#A7 Lugner-PC Grobe Forest
+auto eth0
+iface eth0 inet static
+	address 192.209.1.2
+	netmask 255.255.255.0
+	gateway 192.209.1.1
+```
+- Granz Channel
+```
+#A6 Linie-PC Granz Channel
+auto eth0
+iface eth0 inet static
+	address 192.209.4.2
+	netmask 255.255.254.0
+	gateway 192.209.4.1
+```
+- Breadt Region
+```
+#A5 Lawine-PC Breadt Region
+auto eth0
+iface eth0 inet static
+	address 192.209.0.130
+	netmask 255.255.255.192
+	gateway 192.209.0.129
+```
+- Riegel Canyon
+```
+#A11 Heiter-PC Riegel Canyon
+auto eth0
+iface eth0 inet static
+	address 192.209.16.3
+	netmask 255.255.252.0
+	gateway 192.209.16.1
+```
+### Server
+- Ritcher
+```
+#A10 Eisen-Server Ritcher
+auto eth0
+iface eth0 inet static
+	address 192.209.0.50
+	netmask 255.255.255.248
+	gateway 192.209.0.49
+```
+- Revolte
+```
+#A10 Eisen-Server Revolte
+auto eth0
+iface eth0 inet static
+	address 192.209.0.51
+	netmask 255.255.255.248
+	gateway 192.209.0.49
+```
+- Stark
+```
+#A12 Eisen-Stark
+auto eth0
+iface eth0 inet static
+	address 192.209.0.2
+	netmask 255.255.255.252
+	gateway 192.209.0.1
+```
+- Sein
+```
+#A11 Heiter-Server Sein
+auto eth0
+iface eth0 inet static
+	address 192.209.16.2
+	netmask 255.255.252.0
+	gateway 192.209.16.1
+```
+
+## Statics Route Configuration
+Berikut adalah konfigurasi routing.
+
+- Fern
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.209.0.5	#default A1,A13
+```
+- Himmel
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.209.0.9	#default A3,A14
+```
+- Flamme
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.209.0.13	#default A2,A13,A14,A15
+route add -net 192.209.24.0 netmask 255.255.248.0 gw 192.209.0.6	#A1
+route add -net 192.209.0.40 netmask 255.255.255.248 gw 192.209.0.10	#A3
+```
+- Frieren
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.209.0.17	#default A4,A15,A16
+route add -net 192.209.24.0 netmask 255.255.248.0 gw 192.209.0.14	#A1
+route add -net 192.209.0.4 netmask 255.255.255.252 gw 192.209.0.14	#A13
+route add -net 192.209.8.0 netmask 255.255.252.0 gw 192.209.0.14	#A2
+route add -net 192.209.0.40 netmask 255.255.255.248 gw 192.209.0.14	#A3
+route add -net 192.209.0.8 netmask 255.255.255.252 gw 192.209.0.14	#A14
+```
+- Denken
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.209.0.21	#default A9,A17
+```
+- Heiter
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.209.0.129	#default A11,A5
+```
+- Lawine
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.209.0.33	#default A20,A5
+route add -net 192.209.16.0 netmask 255.255.252.0 gw 192.209.0.131	#A11
+```
+- Linie
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.209.0.29	#default A19,A6,A20
+route add -net 192.209.0.128 netmask 255.255.255.192 gw 192.209.0.34	#A5
+route add -net 192.209.16.0 netmask 255.255.252.0 gw 192.209.0.34	#A11
+```
+- Lugner
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.209.0.37	#default A8,A7,A21
+```
+- Eisen
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.209.0.25	#default A18,A10,A12,A21,A19
+route add -net 192.209.0.128 netmask 255.255.255.192 gw 192.209.0.30	#A5
+route add -net 192.209.16.0 netmask 255.255.252.0 gw 192.209.0.30	#A11
+route add -net 192.209.0.32 netmask 255.255.255.252 gw 192.209.0.30	#A20
+route add -net 192.209.4.0 netmask 255.255.254.0 gw 192.209.0.30	#A6
+route add -net 192.209.12.0 netmask 255.255.252.0 gw 192.209.0.38	#A8
+route add -net 192.209.1.0 netmask 255.255.255.0 gw 192.209.0.38	#A7
+```
+- Aura
+```
+#eth1
+route add -net 192.209.24.0 netmask 255.255.248.0 gw 192.209.0.18	#A1
+route add -net 192.209.0.4 netmask 255.255.255.252 gw 192.209.0.18	#A13
+route add -net 192.209.8.0 netmask 255.255.252.0 gw 192.209.0.18	#A2
+route add -net 192.209.0.40 netmask 255.255.255.248 gw 192.209.0.18	#A3
+route add -net 192.209.0.8 netmask 255.255.255.252 gw 192.209.0.18	#A14
+route add -net 192.209.0.12 netmask 255.255.255.252 gw 192.209.0.18	#A15
+route add -net 192.209.0.64 netmask 255.255.255.224 gw 192.209.0.18	#A4
+#eth2
+route add -net 192.209.2.0 netmask 255.255.255.0 gw 192.209.0.22	#A9
+#eth3
+route add -net 192.209.0.48 netmask 255.255.255.248 gw 192.209.0.26	#A10
+route add -net 192.209.0.0 netmask 255.255.255.252 gw 192.209.0.26	#A12
+route add -net 192.209.0.36 netmask 255.255.255.252 gw 192.209.0.26	#A21
+route add -net 192.209.12.0 netmask 255.255.252.0 gw 192.209.0.26	#A8
+route add -net 192.209.1.0 netmask 255.255.255.0 gw 192.209.0.26	#A7
+route add -net 192.209.0.28 netmask 255.255.255.252 gw 192.209.0.26	#A19
+route add -net 192.209.4.0 netmask 255.255.254.0 gw 192.209.0.26	#A6
+route add -net 192.209.0.32 netmask 255.255.255.252 gw 192.209.0.26	#A20
+route add -net 192.209.0.128 netmask 255.255.255.192 gw 192.209.0.26	#A5
+route add -net 192.209.16.0 netmask 255.255.252.0 gw 192.209.0.26	#A11
+```
+
+## Testing
