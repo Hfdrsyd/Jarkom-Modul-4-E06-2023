@@ -10,18 +10,41 @@ Berikut adalah repository dari kelompok E06 untuk pengerjaan Praktikum Modul 4 J
 # Dokumentasi Pengerjaan VLSM di GNS3
 ## Subnetting VLSM
 Menentukan jumlah subnet pada topologi.
-![image](Images/VLSM/subnetTopo.png)
+![image](Image/VLSM/topo.jpg)
 
 Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet.
-![image](Images/VLSM/subnetTabel.png)
+| Subnet | Jumlah IP | Netmask | 
+| --- | --- | --- |
+| A1 | 1023 | /21 |
+| A2 | 1001 | /22 | 
+| A3 | 6 | /29 |
+| A4 | 25 | /27 |
+| A5 | 31 | /26 |
+| A6 | 255 | /23 |
+| A7 | 251 | /24 |
+| A8 | 1001 | /22 |
+| A9 | 127 | /24 |
+| A10 | 3 | /29 |
+| A11 | 512 | /22 |
+| A12 | 2 | /30 |
+| A13 | 2 | /30 |
+| A14 | 2 | /30 |
+| A15 | 2 | /30 |
+| A16 | 2 | /30 |
+| A17 | 2 | /30 |
+| A18 | 2 | /30 |
+| A19 | 2 | /30 |
+| A20 | 2 | /30 |
+| A21 | 2 | /30 |
+
 Berdasarkan total IP dan netmask yang dibutuhkan, Subnet besar yang dibentuk memiliki NID `192.209.0.0` dengan Netmask `/19`.
 
 ## Tree VLSM
 Menghitung pembagian IP berdasarkan NID dan Netmask yang didapatkan.
-![image](Images/VLSM/tree.png)
+![image](Image/VLSM/tree.jpg)
 
 Dari Tree di atas akan mendapat pembagian IP sebagai berikut.
-![image](Images/VLSM/tabelIP.png)
+![image](Image/VLSM/ip.jpg)
 
 ## Configuration VLSM
 Mengatur Network Configuration masing-masing interface pada setiap node.
