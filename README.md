@@ -36,6 +36,7 @@ Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet.
 | A19 | 2 | /30 |
 | A20 | 2 | /30 |
 | A21 | 2 | /30 |
+| Total | 4255 | /19 |
 
 Berdasarkan total IP dan netmask yang dibutuhkan, Subnet besar yang dibentuk memiliki NID `192.209.0.0` dengan Netmask `/19`.
 
@@ -508,3 +509,5 @@ route add -net 192.209.16.0 netmask 255.255.252.0 gw 192.209.0.26	#A11
 ```
 
 ## Testing
+Client Rohr Road melakukan ping untuk Wille Region dengan ip `192.209.2.3` dan Grobe Forest dengan ip `192.209.1.2`
+![image](Image/VLSM/testing.png)
