@@ -518,6 +518,8 @@ Client Rohr Road melakukan ping untuk Wille Region dengan ip `192.209.2.3` dan G
 
 ![image](Image/CIDR/Subnet.png)
 
+![image](Image/CIDR/sub.png)
+
 ## penggabungan dan Tree
 Penggabungan subnet subnet kecil menjadi satu subnet besar dan dipecah dengan tree agar mendapat pembagian IP.
 
@@ -535,3 +537,14 @@ dari Tree dan penggabungan diperoleh:
 
 ![image](Image/CIDR/pembagian.png)
 
+## Subnetting CIDR di Cisco Packet Tracer
+
+![image](Image/CIDR/IPSubnet.jpg)
+
+## Routing CIDR di Cisco Packet Tracer
+
+<!-- masih belum nanti kuisi -->
+
+## Hasil Testing pengiriman packet
+
+![image](Image/CIDR/Testing.png)
