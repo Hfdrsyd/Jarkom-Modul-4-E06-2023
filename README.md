@@ -511,3 +511,27 @@ route add -net 192.209.16.0 netmask 255.255.252.0 gw 192.209.0.26	#A11
 ## Testing
 Client Rohr Road melakukan ping untuk Wille Region dengan ip `192.209.2.3` dan Grobe Forest dengan ip `192.209.1.2`
 ![image](Image/VLSM/testing.png)
+
+
+# Dokumentasi Pengerjaan CIDR di Cisco
+## Subnetting CIDR
+
+![image](Image/CIDR/Subnet.png)
+
+## penggabungan dan Tree
+Penggabungan subnet subnet kecil menjadi satu subnet besar dan dipecah dengan tree agar mendapat pembagian IP.
+
+![image](Image/CIDR/penggabungan.png)
+
+dengan bantuan table subnet berikut:
+
+![image](Image/CIDR/1.png)
+
+diperoleh tree sebagai berikut:
+
+![image](Image/CIDR/Tree.jpg)
+
+dari Tree dan penggabungan diperoleh:
+
+![image](Image/CIDR/pembagian.png)
+
