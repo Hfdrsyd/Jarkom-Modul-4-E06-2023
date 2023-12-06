@@ -542,9 +542,40 @@ dari Tree dan penggabungan diperoleh:
 ![image](Image/CIDR/IPSubnet.jpg)
 
 ## Routing CIDR di Cisco Packet Tracer
+### Aura
+![image](Image/CIDR/Routing/aura1.png)
+![image](Image/CIDR/Routing/aura2.png)
 
-<!-- masih belum nanti kuisi -->
+### Denken
+![image](Image/CIDR/Routing/Denken.png)
+
+### Eisen
+![image](Image/CIDR/Routing/Eisen.png)
+
+### Fern
+![image](Image/CIDR/Routing/Fern.png)
+
+### Flamme
+![image](Image/CIDR/Routing/Flamme.png)
+
+### Freiren
+![image](Image/CIDR/Routing/Frieren.png)
+
+### Heiter
+![image](Image/CIDR/Routing/Heiter.png)
+
+### Himmel
+![image](Image/CIDR/Routing/Himmel.png)
+
+### Lawine
+![image](Image/CIDR/Routing/Lawine.png)
+
+### Linie
+![image](Image/CIDR/Routing/Linie.png)
+
+### Lugner
+![image](Image/CIDR/Routing/Lugner.png)
 
 ## Hasil Testing pengiriman packet
-
+Testing dilakukan secara sampling pada node yang berada diujung.
 ![image](Image/CIDR/Testing.png)
